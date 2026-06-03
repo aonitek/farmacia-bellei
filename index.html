@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/farmacia-bellei/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Farmacia Bellei | Chiclana 137 · Bahía Blanca · Desde 1960</title>
+<meta name="description" content="Farmacia Bellei en Chiclana 137, Bahía Blanca. Abierta las 24 horas los 365 días. Fórmulas magistrales, dermocosmética premium, ortopedia y envío a domicilio. Más de 65 años de historia." />
+<meta property="og:title" content="Farmacia Bellei | Chiclana 137 · Bahía Blanca · Desde 1960" />
+<meta property="og:description" content="Farmacia Bellei en Chiclana 137, Bahía Blanca. Abierta las 24 horas los 365 días. Fórmulas magistrales, dermocosmética premium, ortopedia y envío a domicilio. Más de 65 años de historia." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Farmacia Bellei | Chiclana 137 · Bahía Blanca · Desde 1960" />
+<meta name="twitter:description" content="Farmacia Bellei en Chiclana 137, Bahía Blanca. Abierta las 24 horas los 365 días. Fórmulas magistrales, dermocosmética premium, ortopedia y envío a domicilio. Más de 65 años de historia." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mpykfe7v-mki6w";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.aonitek.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4529');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='w5Zi2582';
+  var apiBase='https://app.aonitek.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<script src="https://app.aonitek.com/widget.js" data-widget="18521644" async></script>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      Farmacia Bellei
+      <span>Chiclana 137 · Bahía Blanca · Est. 1960</span>
+    </a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#formulas">Fórmulas</a>
+      <a href="#historia">Nosotros</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </div>
+    <button class="nav-hamburger" id="menuBtn" aria-label="Menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="menuClose" aria-label="Cerrar">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+  </button>
+  <a href="#servicios" class="menu-link">Servicios</a>
+  <a href="#marcas" class="menu-link">Marcas</a>
+  <a href="#formulas" class="menu-link">Fórmulas</a>
+  <a href="#historia" class="menu-link">Nosotros</a>
+  <a href="#contacto" class="menu-link">Contacto</a>
+  <a href="tel:02914545252" style="color:var(--gold);margin-top:8px">(0291) 454-5252</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-left container" style="grid-column:1;padding-left:32px;padding-right:32px">
+    <div class="hero-kicker reveal">
+      <div class="hero-kicker-line"></div>
+      <span>Bahía Blanca · Argentina</span>
+    </div>
+    <h1 class="reveal d1">
+      Salud, ciencia<br>y <em>confianza</em><br>desde 1960
+    </h1>
+    <p class="hero-year reveal d2">Tres generaciones al servicio de la salud</p>
+    <p class="hero-desc reveal d3">
+      Farmacia Bellei es la farmacia de referencia en Chiclana 137. 
+      Fórmulas magistrales propias, marcas dermocosmética premium, 
+      atención farmacéutica experta — las 24 horas, los 365 días del año.
+    </p>
+    <div class="hero-actions reveal d4">
+      <a href="#contacto" class="btn btn-gold">Consultar ahora</a>
+      <a href="tel:02914545252" class="btn btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (0291) 454-5252
+      </a>
+    </div>
+  </div>
+  <div class="hero-right" style="padding-right:0">
+    <div class="hero-card-stack reveal d2">
+      <div class="hero-badge-24">
+        <div class="pulse-dot"></div>
+        <div>
+          <div class="badge-24-text">Abierta las 24 horas</div>
+          <div class="badge-24-sub">365 días del año · Sin excepción</div>
+        </div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-num">65<span style="font-size:28px;color:var(--text-dim)">+</span></div>
+        <div class="stat-label">Años de historia en Bahía Blanca</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-num" style="font-size:38px;letter-spacing:.02em">Fórmulas<br style="display:none"> <em style="font-style:italic;color:var(--gold)">magistrales</em></div>
+        <div class="stat-label" style="margin-top:6px">Laboratorio propio · Presupuesto sin cargo</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Descubrí</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+  </div>
+</section>
+
+<!-- INTRO BAR -->
+<div class="intro-bar">
+  <div class="container">
+    <div class="intro-bar-inner">
+      <div class="intro-item">
+        <div class="intro-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <p><strong>Abierta 24 horas</strong>Todos los días del año</p>
+      </div>
+      <div class="intro-item">
+        <div class="intro-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <p><strong>Chiclana 137</strong>Bahía Blanca, Buenos Aires</p>
+      </div>
+      <div class="intro-item">
+        <div class="intro-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <p><strong>(0291) 454-5252</strong>WhatsApp: +54 9 291 642-1344</p>
+      </div>
+      <div class="intro-item">
+        <div class="intro-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <p><strong>Envío a domicilio</strong>En toda Bahía Blanca</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
+  <div class="container">
+    <div class="servicios-layout">
+      <div class="servicios-left">
+        <div class="section-eyebrow reveal">
+          <div class="section-eyebrow-line"></div>
+          <span>Servicios</span>
+        </div>
+        <h2 class="section-title reveal d1">Todo lo<br>que<br><em>necesitás</em></h2>
+        <p class="section-body reveal d2">
+          Desde medicamentos con y sin receta hasta dermocosmética de última generación. 
+          Una farmacia completa, con la calidez de lo familiar y la expertise de más de seis décadas.
+        </p>
+        <div style="margin-top:40px" class="reveal d3">
+          <a href="#contacto" class="btn btn-outline">Consultar servicios</a>
+        </div>
+      </div>
+      <div class="servicios-list">
+        <div class="serv-item reveal d1">
+          <div class="serv-num">01</div>
+          <div class="serv-content">
+            <div class="serv-name">Farmacia 24 horas</div>
+            <div class="serv-desc">Medicamentos con y sin receta, genéricos y de marca. Atención farmacéutica profesional ininterrumpida.</div>
+          </div>
+          <div class="serv-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="serv-item reveal d2">
+          <div class="serv-num">02</div>
+          <div class="serv-content">
+            <div class="serv-name">Fórmulas magistrales</div>
+            <div class="serv-desc">Laboratorio propio para preparados farmacéuticos personalizados. Presupuesto sin cargo con tu receta.</div>
+          </div>
+          <div class="serv-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="serv-item reveal d3">
+          <div class="serv-num">03</div>
+          <div class="serv-content">
+            <div class="serv-name">Perfumería y dermocosmética</div>
+            <div class="serv-desc">Avène, La Roche-Posay, Vichy, Eucerin, Ducray, Klorane y más. Asesoramiento especializado incluido.</div>
+          </div>
+          <div class="serv-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="serv-item reveal d4">
+          <div class="serv-num">04</div>
+          <div class="serv-content">
+            <div class="serv-name">Ortopedia</div>
+            <div class="serv-desc">Bastones, fajas, muñequeras, rodilleras, tobilleras, plantillas y artículos de apoyo. Asesoramiento personalizado.</div>
+          </div>
+          <div class="serv-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="serv-item reveal d5">
+          <div class="serv-num">05</div>
+          <div class="serv-content">
+            <div class="serv-name">Regalería</div>
+            <div class="serv-desc">Artículos de regalo para todas las ocasiones. El detalle perfecto a pasos de tu compra de farmacia.</div>
+          </div>
+          <div class="serv-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="serv-item reveal d6">
+          <div class="serv-num">06</div>
+          <div class="serv-content">
+            <div class="serv-name">Envío a domicilio</div>
+            <div class="serv-desc">Tus medicamentos y productos directamente en tu puerta en Bahía Blanca. Pedí por WhatsApp o chat.</div>
+          </div>
+          <div class="serv-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARCAS -->
+<section class="marcas" id="marcas">
+  <div class="container">
+    <div class="marcas-header">
+      <div>
+        <div class="section-eyebrow reveal">
+          <div class="section-eyebrow-line"></div>
+          <span>Marcas premium</span>
+        </div>
+        <h2 class="section-title reveal d1">Dermocosmética<br><em>de autor</em></h2>
+      </div>
+      <p class="section-body reveal d2" style="margin-top:0;align-self:end">
+        Trabajamos exclusivamente con los laboratorios farmacéuticos más reconocidos del mundo. 
+        Cada producto respaldado por evidencia clínica y recomendado por nuestros farmacéuticos.
+      </p>
+    </div>
+    <div class="marcas-grid reveal">
+      <div class="marca-cell">
+        <div class="marca-name">Avène</div>
+        <div class="marca-cat">Agua termal · Pieles sensibles</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">La Roche-Posay</div>
+        <div class="marca-cat">Dermocosmética clínica</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">Vichy</div>
+        <div class="marca-cat">Salud y belleza</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">Eucerin</div>
+        <div class="marca-cat">Piel sensible y seca</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">A-Derma</div>
+        <div class="marca-cat">Pieles frágiles</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">Ducray</div>
+        <div class="marca-cat">Cabello y cuero cabelludo</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">Klorane</div>
+        <div class="marca-cat">Cuidado capilar natural</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">René Furterer</div>
+        <div class="marca-cat">Especialistas en cabello</div>
+      </div>
+      <div class="marca-cell">
+        <div class="marca-name">Elancyl</div>
+        <div class="marca-cat">Cuidado corporal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAS -->
+<section class="formulas" id="formulas">
+  <div class="container">
+    <div class="formulas-inner">
+      <div class="formulas-text">
+        <div class="section-eyebrow reveal">
+          <div class="section-eyebrow-line"></div>
+          <span>Servicio exclusivo</span>
+        </div>
+        <h2 class="section-title reveal d1">Laboratorio de<br><em>fórmulas magistrales</em></h2>
+        <p class="section-body reveal d2">
+          Desde 1960 elaboramos preparados farmacéuticos personalizados bajo prescripción médica. 
+          Materias primas de máxima calidad, controles estrictos y la expertise de más de seis décadas.
+        </p>
+        <p class="section-body reveal d3" style="margin-top:16px">
+          Acercá tu receta al local o envianos una foto por WhatsApp. Te damos presupuesto sin cargo. 
+          Es un servicio que pocas farmacias en Bahía Blanca pueden ofrecer.
+        </p>
+        <div class="formulas-cta reveal d4">
+          <a href="#contacto" class="btn btn-gold">Consultar sobre fórmulas</a>
+        </div>
+      </div>
+      <div class="formulas-right">
+        <div class="formula-block reveal d1">
+          <div class="formula-block-num">65<span style="font-size:28px">+</span></div>
+          <div class="formula-block-label">Años elaborando fórmulas magistrales</div>
+        </div>
+        <div class="formula-block reveal d2">
+          <div class="formula-block-num">24hs</div>
+          <div class="formula-block-label">Atención farmacéutica ininterrumpida</div>
+        </div>
+        <div class="formula-block reveal d3">
+          <div class="formula-block-num">100%</div>
+          <div class="formula-block-label">Materias primas de máxima calidad certificada</div>
+        </div>
+        <div class="formula-block reveal d4" style="background:var(--gold-dim);border-color:var(--gold-line)">
+          <div style="font-family:var(--font-display);font-size:18px;font-style:italic;color:var(--gold);line-height:1.4">
+            "Presentá tu receta y recibís presupuesto sin cargo"
+          </div>
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-top:8px;font-weight:500">
+            Presencial o por WhatsApp
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORQUE -->
+<section class="porque" id="porque">
+  <div class="container">
+    <div class="porque-header">
+      <div class="section-eyebrow reveal" style="justify-content:center">
+        <div class="section-eyebrow-line"></div>
+        <span>¿Por qué elegirnos?</span>
+      </div>
+      <h2 class="section-title reveal d1" style="text-align:center">Lo que nos hace<br><em>diferentes</em></h2>
+    </div>
+    <div class="porque-grid">
+      <div class="pq-item reveal d1">
+        <div class="pq-num">01</div>
+        <div class="pq-title">65+ años de historia familiar</div>
+        <p class="pq-text">Desde 1960 en el corazón de Bahía Blanca. Tres generaciones de la familia Bellei dedicadas a cuidar tu salud con el mismo compromiso inquebrantable.</p>
+      </div>
+      <div class="pq-item reveal d2">
+        <div class="pq-num">02</div>
+        <div class="pq-title">Abiertos las 24 horas, siempre</div>
+        <p class="pq-text">Todos los días del año, sin excepciones. Estamos cuando más nos necesitás — a las 3 de la madrugada o el 25 de diciembre.</p>
+      </div>
+      <div class="pq-item reveal d3">
+        <div class="pq-num">03</div>
+        <div class="pq-title">Laboratorio propio de fórmulas</div>
+        <p class="pq-text">Preparados farmacéuticos personalizados elaborados con materias primas certificadas. Un servicio exclusivo que pocas farmacias bahienses pueden ofrecer.</p>
+      </div>
+      <div class="pq-item reveal d4">
+        <div class="pq-num">04</div>
+        <div class="pq-title">Marcas premium con asesoramiento</div>
+        <p class="pq-text">No alcanza con tener las mejores marcas — hay que saber recomendarlas. Nuestros farmacéuticos te guían para que elijas lo mejor para tu piel y tu salud.</p>
+      </div>
+      <div class="pq-item reveal d5">
+        <div class="pq-num">05</div>
+        <div class="pq-title">Entrega a domicilio en Bahía Blanca</div>
+        <p class="pq-text">Tus medicamentos y productos directamente en tu domicilio. Pedí por WhatsApp o nuestro chat y coordinamos la entrega.</p>
+      </div>
+      <div class="pq-item reveal d6">
+        <div class="pq-num">06</div>
+        <div class="pq-title">No somos una cadena</div>
+        <p class="pq-text">Somos tu farmacia de barrio con más de seis décadas de raigambre local. La calidad de siempre y la tecnología de hoy, con el calor de lo familiar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORIA -->
+<section class="historia" id="historia">
+  <div class="container">
+    <div class="historia-inner">
+      <div class="historia-visual reveal">
+        <div class="historia-year-bg">1960</div>
+        <div class="historia-quote-card">
+          <blockquote class="historia-blockquote">
+            "Más de 65 años nos avalan. Tu confianza nos impulsa cada día."
+          </blockquote>
+          <cite class="historia-cite">Familia Bellei, tres generaciones al servicio de la salud</cite>
+        </div>
+      </div>
+      <div class="historia-text-col reveal d2">
+        <div class="section-eyebrow" style="margin-bottom:24px">
+          <div class="section-eyebrow-line"></div>
+          <span>Nuestra historia</span>
+        </div>
+        <p>Farmacia Bellei nació en Bahía Blanca en 1960. Desde entonces, generación tras generación, nos dedicamos a cuidar la salud de las familias bahienses con el mismo compromiso de siempre: atención profesional, productos de calidad y puertas abiertas las 24 horas.</p>
+        <p>Somos parte de la red Bellei, con presencia en Chiclana 137 y Estomba 131, lo que nos permite ofrecer un servicio integral que incluye farmacia, perfumería, laboratorio propio, regalería, productos ortopédicos y fórmulas magistrales.</p>
+        <p>En un mundo que cambia rápido, algunos valores permanecen. La cercanía, la confianza y el compromiso con tu salud son los pilares que nos guiaron durante más de seis décadas — y que seguimos honrando cada día.</p>
+        <div class="historia-tags">
+          <span class="htag">Desde 1960</span>
+          <span class="htag">Familia Bellei</span>
+          <span class="htag">Chiclana 137</span>
+          <span class="htag">Estomba 131</span>
+          <span class="htag">Bahía Blanca</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-band-inner">
+      <div class="cta-band-text">
+        <p>¿Necesitás una <em>fórmula magistral</em><br>o asesoramiento de farmacéutico?</p>
+        <small>Respondemos por WhatsApp, teléfono o en persona — las 24 horas.</small>
+      </div>
+      <div class="cta-band-actions">
+        <a href="https://wa.me/5492916421344" target="_blank" rel="noopener" class="btn btn-gold">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.989.518 3.859 1.424 5.486L2.09 21.906a.5.5 0 00.614.614l4.396-1.341A9.936 9.936 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+          WhatsApp
+        </a>
+        <a href="tel:02914545252" class="btn btn-outline">(0291) 454-5252</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="container">
+    <div class="contacto-grid">
+      <div>
+        <div class="section-eyebrow reveal">
+          <div class="section-eyebrow-line"></div>
+          <span>Contacto</span>
+        </div>
+        <h2 class="section-title reveal d1">Estamos<br><em>para vos</em></h2>
+        <p class="section-body reveal d2">Visitanos, llamanos o escribinos. Siempre hay alguien de nuestro equipo listo para atenderte — sin turnos, sin esperas.</p>
+
+        <div class="ci-list reveal d3">
+          <div class="ci-row">
+            <div class="ci-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="ci-row-label">Dirección</div>
+              <div class="ci-row-value">Chiclana 137, Bahía Blanca<br>Buenos Aires, Argentina</div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="ci-row-label">Teléfono</div>
+              <div class="ci-row-value"><a href="tel:02914545252">(0291) 454-5252</a></div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.989.518 3.859 1.424 5.486L2.09 21.906a.5.5 0 00.614.614l4.396-1.341A9.936 9.936 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <div class="ci-row-label">WhatsApp</div>
+              <div class="ci-row-value"><a href="https://wa.me/5492916421344" target="_blank" rel="noopener">+54 9 291 642-1344</a></div>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ci-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <div class="ci-row-label">Horario</div>
+              <div class="ci-row-value" style="color:var(--gold);font-weight:600">Abierta 24 horas · 365 días</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-row reveal d4">
+          <a href="https://www.instagram.com/farmaciabelleichiclana137/" target="_blank" rel="noopener" class="soc-btn">IG</a>
+          <a href="https://www.facebook.com/Farnacia.Bellei.Chiclana.137.Bahia.Blanca.Arg/" target="_blank" rel="noopener" class="soc-btn">FB</a>
+        </div>
+      </div>
+
+      <div class="contacto-form-wrap reveal d2">
+        <h3>Envianos tu consulta</h3>
+        <form id="contactForm" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+              <label>Teléfono</label>
+              <input type="tel" placeholder="291 123-4567">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Motivo de consulta</label>
+            <select>
+              <option value="">Seleccioná una opción</option>
+              <option>Medicamentos</option>
+              <option>Fórmulas magistrales</option>
+              <option>Dermocosmética</option>
+              <option>Ortopedia</option>
+              <option>Envío a domicilio</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea placeholder="Contanos en qué podemos ayudarte…"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar consulta</button>
+        </form>
+        <div id="formOk" style="display:none;text-align:center;padding:48px 20px">
+          <div style="font-family:var(--font-display);font-size:48px;color:var(--gold);margin-bottom:16px">✓</div>
+          <div style="font-family:var(--font-display);font-size:24px;color:var(--text);margin-bottom:10px">¡Mensaje enviado!</div>
+          <div style="font-size:14px;color:var(--text-dim)">Te respondemos a la brevedad. Gracias por contactarnos.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.5!2d-62.2724!3d-38.7183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQzJzA2LjAiUyA2MsKwMTYnMjAuNiJX!5e0!3m2!1ses!2sar!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Farmacia Bellei</div>
+        <div class="footer-brand-tagline">Est. 1960 · Bahía Blanca</div>
+        <p class="footer-brand-desc">Tu farmacia de confianza desde 1960. Cuidando la salud de Bahía Blanca con profesionalismo y calidez, las 24 horas, los 365 días del año.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Servicios</h5>
+        <a href="#servicios">Farmacia 24hs</a>
+        <a href="#formulas">Fórmulas magistrales</a>
+        <a href="#servicios">Perfumería</a>
+        <a href="#servicios">Ortopedia</a>
+        <a href="#servicios">Envío a domicilio</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <a href="tel:02914545252">(0291) 454-5252</a>
+        <a href="https://wa.me/5492916421344" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/farmaciabelleichiclana137/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/Farnacia.Bellei.Chiclana.137.Bahia.Blanca.Arg/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Defensa al consumidor</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Farmacia Bellei S.C.S. — Chiclana 137, Bahía Blanca</span>
+      <span style="color:var(--gold)">Abierta 24hs · 365 días</span>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
